@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abono.cs" />
     <Compile Include="Campo.cs" />
     <Compile Include="Cultivo.cs" />
     <Compile Include="CultivoCampo.cs" />

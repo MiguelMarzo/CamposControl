@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Cultivo : IEquatable<Cultivo>
+    class Abono : IEquatable<Abono>
     {
-        public int id;
-        public String tipo;
-        public String variedad;
+        private int id;
+        private String formulacion;
+        private String marca;
 
-        public Cultivo (int id, String tipo, String variedad) {
+        public Abono(int id, String formularcion, String marca)
+        {
             this.id = id;
-            this.tipo = tipo;
-            this.variedad = variedad;
+            this.formulacion = formulacion;
+            this.marca = marca;
         }
-        public bool Equals(Cultivo other)
+        public bool Equals(Abono other)
         {
             if (other == null)
                 return false;
@@ -30,7 +31,7 @@ namespace Entidades
 
         public override string ToString()
         {
-            return tipo + ", " + variedad;
+            return marca.ToString();
         }
     }
 }
